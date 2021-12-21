@@ -194,6 +194,12 @@ footer {
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
+footer p{
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {
