@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.map {
+    position: absolute;
+    padding-top: 80px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.overlay2 {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: rgb(15, 239, 255);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay2-content {
+  position: relative;
+  top: 0%;
+  width: 80%;
+  text-align: left;
+  margin-top: 0px;
+  padding:30px;
+}
+
+.overlay2 a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+
+  font-weight: 800;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay p {
+  font-size:10px;
+  color:blue !important;
+}
+
+.overlay2 a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay2 .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 40px;
+}
+
+.closebtn:hover{
+  -webkit-transform:scale(.8, .8);
+display: inline-block;
+}
+
+
+.menu
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.menu ul
+{
+  position: relative;
+}
+.menu ul li
+{
+  list-style: none;
+}
+.menu ul li a
+{
+  text-decoration: none;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+.menu ul li a:hover
+{
+  color: #03a9f4; 
+}
+
+.openbtn{
+  color:white;
+  padding-bottom: 10px;
+  transition: all 0.3s ease-in;
+}
+
+.openbtn:hover{
+color:rgba(15, 239, 255, 0.815);
+-webkit-transform:scale(1, 1.5);
+display: inline-block;
+}
+
+
+.menulogo{
+ 
+  padding:25px;
+  }
+  
+  header
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+  }
+  header .logo
+  {
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size:1em;
+  }
+
+
+header a {  
+  text-decoration: none;
+  color:rgb(255, 255, 255) ;
+
+}
+
+.openbtn{
+  color:rgb(255, 255, 255);
+  padding-bottom: 8px;
+  transition: all 0.3s ease-in;
+}
+
+.openbtn:hover{
+color:rgba(15, 239, 255, 0.815);
+-webkit-transform:scale(1, 1.5);
+display: inline-block;
+}
+
+.text
+{
+  position: relative;
+  width:100%;
+  padding-top:30px;
+}
+
+.desc{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: rgba(167, 96, 233, 0.87);
+  height: 40px;
+}
+
+.desc_contents{
+  font-size: 10px;
+  color:white;
+  text-shadow: 1px 1px 6px black;
+ 
+}

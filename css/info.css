@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.title
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 40px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000000;
+  font-size: 1.3em;
+  text-transform: uppercase;
+
+}
+
+header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+
+header .logo
+{
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size:1em;
+}
+
+header a {  
+  text-decoration: none;
+  color:rgb(255, 255, 255) ;
+
+}
+
+.openbtn{
+  color:rgb(255, 255, 255);
+  padding-bottom: 8px;
+  transition: all 0.3s ease-in;
+}
+
+.openbtn:hover{
+color:rgba(15, 239, 255, 0.815);
+-webkit-transform:scale(1, 1.5);
+display: inline-block;
+}
+
+.showcase
+{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(243, 243, 243);
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.backdrop{
+  background-color: black;
+border-radius: .2em;
+padding: 10px 30px;
+max-width: 600px;
+width: 100%;
+height: 100%;
+margin: 0 auto;
+}
+
+.text
+{
+  position: relative;
+  z-index: 10;
+  width:100%;
+}
+
+.text blockquote{
+  color:white;
+}
+
+.tableauPlaceholder{
+  padding:0 60px;
+}
+
+.menulogo{
+ 
+  padding:25px;
+  }
+
+.text h2
+{
+  font-size: 5em;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+  line-height: 1em;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.text h3
+{
+  font-size: 2em;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  line-height: 1em;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 20px 60px;
+}
+.text p
+{
+  font-size: 1.1em;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  padding: 20px 60px;
+ margin: 0 auto;
+}
+
+.text i{
+  font-size: .7em;
+}
+
+.text figcaption{
+  text-align: center;
+}
+.text a
+{
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 10px 60px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+.text a:hover
+{
+  background:rgba(15, 239, 255, 0.815);
+  transition: all 0.3s ease-in;
+  transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  /*  for IE  */
+  
+  /*  for browsers supporting webkit (such as chrome, firefox, safari etc.). */
+  -webkit-transform: rotateX(360deg);
+  display: inline-block;}
+
+.text img{
+  width: 100%;
+  height:100%;
+  align-items: center;
+
+}
+
+.full_photo{
+  width: 80% !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.overlay2 {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: rgb(15, 239, 255);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay2-content {
+  position: relative;
+  top: 0%;
+  width: 80%;
+  text-align: left;
+  margin-top: 0px;
+  padding:30px;
+}
+
+.overlay2 a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+
+  font-weight: 800;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay p {
+  font-size:10px;
+  color:blue !important;
+}
+
+.overlay2 a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay2 .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 40px;
+}
+
+.closebtn:hover{
+  -webkit-transform:scale(.8, .8);
+display: inline-block;
+}
+
+@media (max-width: 991px)
+{
+  .showcase{
+    justify-content: center;
+    padding:100px 0px;
+  }
+  .showcase header{
+    padding: 25px;
+  
+  }
+  .header {
+    flex-direction: row-reverse;
+
+  }
+
+  .text p{
+    padding: 40px 60px;
+    }
+  .text h2
+  {
+    font-size: 3em;
+  }
+  .text h3
+  {
+    font-size: 1.5rem;
+  }
+
+  .text img{
+    width:100%;
+    height:100%;
+    align-items: center;
+  
+  }
+}

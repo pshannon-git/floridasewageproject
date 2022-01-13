@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/map.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <section class="map">
+
+
+     <header>
+        <h2 class="logo"><a href="/map.html">MAP</a></h2>            
+        <a href="/index.html"><img src="/logo/logow.svg"></a>
+          <span style="font-size:30px;cursor:pointer" class="openbtn" onclick="openNav()">&#9776;</span>   
+        </header><br>
+
+        <div class="desc">
+            <div class="desc_contents">
+                <h3>Heat Map of Florida Sewage Spill Density</h3>
+            </div>
+        </div>
+
+        <div class="text">
+        <iframe width='100%' height='800px' src="https://api.mapbox.com/styles/v1/hannon-ps/ckhy6hqkx1ge919o45viofl61.html?title=false&access_token=pk.eyJ1IjoiaGFubm9uLXBzIiwiYSI6ImNrd3NkZThscjE1N2wybm92Y3Rzcmc3ZDIifQ.E2VH0boEBPJlZAIozo3BBg&zoomwheel=false#5.46/27.768/-83.109/8/13" title="Sewer Spills" style="border:none;"></iframe>
+        </div>
+
+    </section>
+
+    <div id="myNav" class="overlay2">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#x2715</a>
+        <img src="/logo/logomenu.svg" class="menulogo">
+
+        <div class="overlay2-content">
+          <a href="/index.html">Home</a>
+          <a href="/info.html">Info</a>
+          <a href="#">Map</a>
+          <a href="#">Recent News</a>
+          <hr size="3" width="60%" color="black">
+          <p class="info"><a href="https://github.com/pshannon-git/floridasewageproject">View the Project on GitHub </a></p>
+            <h4 class="info"><a href="https://prodenv.dep.state.fl.us/DepPNP/reports/viewIncidentDetails?page=1#">Download the Incident Data </a></h4>
+            <hr size="3" width="80%" color="black">
+            <br><h4>Organizations Supporting Clean Water Rights</h4>
+            <p class="info"><a href=" https://www.miamiwaterkeeper.org/clean_water">Miami Water Keepers</a></p>
+            <p class="info"><a href=" https://www.nature.org/en-us/about-us/where-we-work/united-states/florida/stories-in-florida/florida-fresh-water/">The Nature Conservancy</a></p>
+            <p class="info"><a href=" https://www.ocefoundation.org/sos">One Childrens Earth</a></p>
+            <p class="info"><a href=" https://www.suncoastwaterkeeper.org">Suncoast Waterkeepers</a></p>
+    
+        </div>
+    </div>
+        
+    <script src="/js/index.js" async defer></script>
+    
+    </body>
+</html>
