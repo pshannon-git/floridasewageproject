@@ -36,7 +36,6 @@ header
   align-items: center;
   transition: 0.5s;
   z-index: 2;
-  
 }
 
 .showcase.active

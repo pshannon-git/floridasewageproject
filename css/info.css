@@ -74,6 +74,8 @@ display: inline-block;
   background: rgb(243, 243, 243);
   transition: 0.5s;
   z-index: 2;
+  overflow: hidden;
+
 }
 
 .backdrop{
